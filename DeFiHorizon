@@ -1,0 +1,26 @@
+# DeFiHorizon.py
+
+class DeFiHorizon:
+    def __init__(self, platform_name, horizon_features):
+        self.platform_name = platform_name
+        self.horizon_features = horizon_features
+    
+    def display_platform_info(self):
+        print(f"Platform Name: {self.platform_name}")
+        print("Horizon Features:")
+        for feature in self.horizon_features:
+            print(f"- {feature}")
+
+# Example usage
+if __name__ == "__main__":
+    platform_name = "DeFiHorizon"
+    horizon_features = [
+        "Tracking emerging DeFi projects",
+        "Analysis of DeFi protocols and governance",
+        "Monitoring DeFi token launches and trends",
+        "Research on yield farming strategies",
+        "Insights into decentralized exchanges (DEXs)"
+    ]
+    
+    defi_horizon = DeFiHorizon(platform_name, horizon_features)
+    defi_horizon.display_platform_info()
